@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Rafael
+ * @author Ruben Daniel Baez Muñiz A01411504
  */
 public class SPPRBaezMT01P3 {
 
