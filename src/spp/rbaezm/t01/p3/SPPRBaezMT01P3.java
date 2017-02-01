@@ -17,34 +17,36 @@ public class SPPRBaezMT01P3 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        double Matr, C1, C2, C3, C4, C5, Prom;
+        double Matr, Calif1, Calif2, Calif3, Calif4, Calif5, Prom;
         Scanner kb= new Scanner (System.in);
         //Introducir variable
         
         //Pedir Datos
-        System.out.println("Introduce tú Matrícula");
+        System.out.println("Introduzca su matrícula sin A");
         Matr= kb.nextDouble();
-        System.out.println("Introduce tus calificaciones");
-        System.out.println("Introduce tu C1");
-        C1= kb.nextDouble();
-        System.out.println("Introduce tu C2");
-        C2= kb.nextDouble();
-        System.out.println("Introduce tu C3");
-        C3= kb.nextDouble();
-        System.out.println("Introduce tu C4");
-        C4= kb.nextDouble();
-        System.out.println("Introduce tu C5");
-        C5= kb.nextDouble();
         
-        //Resolver Promedio
-        Prom= ((C1+C2+C3+C4+C5)/5);
+        System.out.println("Digite su calif 1");
+        Calif1= kb.nextDouble();
+        System.out.println("Digite su calif 2");
+        Calif2= kb.nextDouble();
+        System.out.println("Digite su calif 3");
+        Calif3= kb.nextDouble();
+        System.out.println("Digite su calif 4");
+        Calif4= kb.nextDouble();
+        System.out.println("Digite su calif 5");
+        Calif5= kb.nextDouble();
+        //Indicar promedio
+        
+        System.out.println("Su promedio es ="+ Prom);
+        
+        //Indicar Status
+        Prom= ((Calif1+Calif2+Calif3+Calif4+Calif5)/5);
         if (Prom > 6.9)
             System.out.println("APROBADO");
         else if (Prom < 7.0)
             System.out.println("REPROBADO");
         
-        //Mostrar Resultado
-        System.out.println("Tu promedio es="+ Prom);
+        
     }
     
 }
